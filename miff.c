@@ -140,10 +140,10 @@ void list_files(char *infile)
         exit(2);
     }
 
-    char file_name[MAX_FILENAME_LEN + 1] = {0}; // +1 to leave room for NUL
-    size_t count;
-
     while (!feof(inf) && !ferror(inf)) {
+        char file_name[MAX_FILENAME_LEN + 1] = {0}; // +1 to leave room for NUL
+        size_t count;
+
         // Read the file_name
         count = fread(file_name, 1, MAX_FILENAME_LEN, inf);
 
