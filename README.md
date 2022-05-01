@@ -11,6 +11,7 @@ to extract them later.
 * Much error checking missing.
 * Non-portable out of Unix land.
 * Doesn't handle subdirectories.
+* Uses `fseek()` so will fail on giant files.
 * Can't yet extract. Whatever.
 
 Again, just a demo.
